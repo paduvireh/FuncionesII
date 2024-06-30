@@ -4,6 +4,13 @@
 
 using namespace std;
 
+void NumerosAleatorios(int cantidad, int maximo){
+	for (int i=0; i<cantidad; i++){
+		int numeromagico= rand()%maximo+1;
+		cout<<numeromagico<<endl;
+	}
+}
+
 int main(){
 	srand(time(0));
 	
@@ -13,9 +20,6 @@ int main(){
 	cout<<"Introduce el maximo valor que deseas generar: ";
 	cin>>max;
 	
-	for (int i=0; i<n; i++){
-		int numeromagico= rand()%max+1;
-		cout<<numeromagico<<endl;
-	}
+	NumerosAleatorios(n, max);
 	return 0;
 }
