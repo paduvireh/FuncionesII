@@ -11,9 +11,14 @@ int main(){
 	d=pow(b, 2)-4*a*c;
 	
     if(d>=0){
-        x1=((-1*b)+sqrt(d))/(2*a);
-        x2=((-1*b)-sqrt(d))/(2*a);
-        cout<<"Las raices son: "<<x1<<" y "<<x2<<endl;
+    	if(d==0){
+    		x1=((-1*b)+sqrt(d))/(2*a);
+    		cout<<"La raiz doble es:"<<x1<<endl;
+		} else {
+	        x1=((-1*b)+sqrt(d))/(2*a);
+	        x2=((-1*b)-sqrt(d))/(2*a);
+	        cout<<"Las raices son: "<<x1<<" y "<<x2<<endl;
+	    }
     } else
 		cout<<"No posee raices reales."<<endl;            
     return 0;
