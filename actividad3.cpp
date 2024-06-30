@@ -9,10 +9,15 @@ float Hipotenusa(float cat1, float cat2){
 
 int main(){
 	float c1, c2, h;
-	cout<<"Ingrese el primer cateto: ";
-	cin>>c1;
-	cout<<"Ingrese el segundo cateto: ";
-	cin>>c2;
+	do{
+		cout<<"Ingrese el primer cateto: ";
+		cin>>c1;
+		cout<<"Ingrese el segundo cateto: ";
+		cin>>c2;
+		if(c1<=0||c2<=0)
+			cout<<"\nLos catetos no pueden ser negativos.\n\n";		
+			
+	} while(c1<=0||c2<=0);
 	
 	h= Hipotenusa(c1, c2);
 	
