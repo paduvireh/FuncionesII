@@ -64,6 +64,9 @@ int main() {
         cout<<"La computadora eligio: "<<comp<<endl;
         
         ganador(us, comp, pu, pc);
+        
+        cout<<"\nPUNTAJE ACTUAL:"<<endl;
+		cout<<"Usted: "<<pu<<" - Computadora: "<<pc<<endl;
     }
     
     if(pu>=3) {
